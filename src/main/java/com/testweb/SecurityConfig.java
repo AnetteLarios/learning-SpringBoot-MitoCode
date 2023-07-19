@@ -26,9 +26,7 @@ public class SecurityConfig extends WebSecurityConfiguration {
 		
 		BCryptPasswordEncoder cryptPassword = new BCryptPasswordEncoder();
 		return cryptPassword;
-		
 	}
-	
 	
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
 		auth.userDetailsService(userDetailsService).passwordEncoder(Bcrypt);

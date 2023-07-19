@@ -1,14 +1,13 @@
 package com.testWeb;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
 import com.testweb.repo.IUserRepo;
 import com.testweb.model.UserLog;
+
 @SpringBootTest
 class DemoWebSpringBootApplicationTests {
 	
@@ -17,8 +16,6 @@ class DemoWebSpringBootApplicationTests {
 	
 	@Autowired
 	private BCryptPasswordEncoder cryptPassword;
-	
-	
 	
 	@Test
 	void createUserTest() {
